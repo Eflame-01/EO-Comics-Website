@@ -1,0 +1,605 @@
+html{
+  width: 100%;
+  min-width: auto;
+}
+body{
+  background: linear-gradient(#003049, #D62828, #F77F00);
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #f1f1f1;
+}
+
+h1, h2{
+  color: #FCBF49;
+  margin-bottom:0.25%;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.0625em;
+}
+
+h1{
+  margin-top: 5rem;
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+p{
+  margin: 0;
+}
+
+a{
+  color: #f1f1f1;
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+a:hover{
+  color: #EAE2B7;
+}
+
+.small-link{
+  font-size: 1rem;
+  margin-left: 0;
+}
+
+.sign-up-layout{
+  right: 5%;
+  position: absolute;
+  z-index: 2;
+}
+
+.required-field{
+  margin-right:2%;
+  margin-left: 2%;
+  display: inline-flex;
+  color: #D62828;
+}
+
+.img-scale{
+  width: 100%;
+  height: 100%;
+}
+
+.navbar{
+  font-family: 'Patrick Hand', cursive;
+}
+
+.button-1{
+  color: #f1f1f1;
+  background-color: #FCBF49;
+  border-color:#f1f1f1;
+  font-size: 1.5em;
+  font-family: 'Patrick Hand', cursive;
+  margin: 0 1% 0 1%;
+}
+
+.button-3{
+  color: #f1f1f1;
+  background-color: #D62828;
+  border-color:#f1f1f1;
+}
+
+.button-2:hover{
+  background-color: #EAE2B7;
+  color: #003049;
+}
+
+.comic-border{
+  border: 0.35rem solid black;
+}
+.comic-border-invisible{
+  border: 0.35rem solid #00000000;
+}
+
+.bottom-comic-border-0{
+  border-bottom: 0;
+}
+
+.border-1{
+  width: 90%;
+  min-width: auto;
+  aspect-ratio: 16/4;
+  overflow: hidden;
+  margin:auto;
+}
+
+.border-2{
+  width:90%;
+  aspect-ratio:2/1;
+  overflow:hidden;
+  margin:auto;
+  margin-bottom:2%;
+}
+
+.border-3{
+  width:100%;
+  min-width:auto;
+  aspect-ratio:2/1.2;
+  margin:1rem 0;
+}
+
+.border-4{
+  width:100%;
+  min-width:auto;
+  aspect-ratio:1/1.25;
+  margin:0;
+  justify-content: center;
+}
+
+.carousel-border{
+  width: 100%;
+  aspect-ratio: 16/4;
+  overflow: hidden;
+}
+
+.container{
+  width: 100%;
+  margin:auto;
+}
+
+.footer-container{
+  width: 100%;
+  padding: 0rem 0 1rem 0;
+  bottom:0;
+  position: relative;
+}
+.copyright-message{
+  font-size: 1rem;
+}
+
+.col{
+  margin: 1rem 1rem;
+  height:100%;
+}
+
+.text-fade-red::before{
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #D62828 50%);
+  content: '\200C';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 90%;
+  width: 25%;
+}
+.text-fade-dark-blue::before{
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #003049 50%);
+  content: '\200C';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 90%;
+  width: 25%;
+}
+.text-fade-beige::before{
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #EAE2B7 50%);
+  content: '\200C';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 90%;
+  width: 25%;
+}
+.text-fade-dark-orange::before{
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #FCBF49 50%);
+  content: '\200C';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 90%;
+  width: 25%;
+}
+
+.background-color-beige{
+  background-color: #EAE2B7;
+}
+.background-color-dark-blue{
+  background-color: #003049;
+}
+.background-color-red{
+  background-color: #D62828;
+}
+.background-color-orange{
+  background-color: #FCBF49;
+}
+.background-color-off-white{
+  background-color:#f1f1f1;
+}
+
+.color-beige{
+  color: #EAE2B7;
+}
+.color-dark-blue{
+  color: #003049;
+}
+.color-red{
+  color: #D62828;
+}
+.color-orange{
+  color: #FCBF49;
+}
+.color-off-white{
+  color:#f1f1f1;
+}
+
+.material-icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  position: relative;
+  top: 5px;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.super-header{
+  margin-top: 1rem;
+  font-size: 5.5rem;
+}
+
+.eo-comics-banner-img {
+  width: 100%;
+  height:100%;
+  position: relative;
+  /* bottom: 75%; */
+}
+
+.eo-comics-simplified-logo {
+  width: 5em;
+  aspect-ratio: 1/1;
+  padding: auto;
+  margin: 1% 1% 0 1%;
+}
+
+.eo-comics-footer-logo{
+  width: 5em;
+  aspect-ratio:1/1;
+  padding:1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eo-comics-signature-logo{
+  width: 7em;
+  aspect-ratio:1/1;
+  padding:1%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toxic-trails-gameplay-photo{
+  width: 100%;
+  height: 100%;
+  /* height: 900px; */
+  /* margin:auto; */
+  position: relative;
+  /* bottom: 50%; */
+}
+
+.main-content-body{
+  max-height: 18rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.side-content-div{
+  margin:auto;
+}
+
+.half-tones-background{
+  background-image: url("Comic Book Half Tones.png");
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+
+/* Game's Page */
+.game-header{
+  margin: 0;
+  padding-top: 1rem;
+  width: 100%;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.category-header{
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing:0.002em;
+}
+
+.game-nav-bar{
+  margin:auto;
+  width:97%;
+}
+
+.play-now-layout{
+  position:relative;
+  margin:auto;
+  top:25%;
+}
+.play-now-text{
+  padding:0;
+  margin:auto;
+}
+
+/* Comics Page*/
+.eo-comics-background{
+  background-image: url("EO Comics Logo Background.png");
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-page{
+  width:90%;
+  margin:auto;
+}
+.glow-btn{
+  transition: all 0.2s ease-in-out;
+}
+.glow-btn:hover {
+  transform:scale(1.1,1.1);
+  -webkit-transform:scale(1.1,1.1);
+  -moz-transform:scale(1.1,1.1);
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #EAE2B7aa;
+}
+.glow-btn-2{
+  transition: all 0.2s ease-in-out;
+}
+.glow-btn-2:hover {
+  transform:scale(1.03,1.03);
+  -webkit-transform:scale(1.05,1.03);
+  -moz-transform:scale(1.03,1.03);
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #EAE2B7aa;
+}
+.dark-blue-transparent{
+  background-color: #003049aa;
+}
+.red-transparent{
+  background-color: #D62828aa;
+}
+.orange-transparent{
+  background-color: #FCBF49aa;
+}
+.beige-transparent{
+  background-color: #EAE2B7aa;
+}
+.white-transparent{
+  background-color: #F1F1F1aa;
+}
+
+.btn-dark-blue{
+  background-color: #003049;
+}
+.btn-red{
+  background-color: #D62828;
+}
+.btn-orange{
+  background-color: #FCBF49;
+}
+.btn-beige{
+  background-color: #EAE2B7;
+}
+.btn-white{
+  color: black;
+  background-color: #F1F1F1;
+}
+
+/* Video Page */
+.carousel-content{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 6/3;
+}
+
+.carousel-container-1{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+.btn-nothing{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Blog Page */
+.blog-page{
+  background: #003049;
+}
+
+.btn-group-vertical{
+  width: 90%;
+}
+.nested-btn-group{
+  width: 100%;
+  /* margin:0; */
+}
+.blog-nav-bar{
+  margin-left: auto;
+  margin-right: auto;
+  height: inherit;
+  position: fixed;
+}
+.blog-content{
+  margin-left:25%;
+}
+.p-blog{
+  font-size: 1.5rem;
+}
+.heading-blog{
+  margin: 2rem 2rem 2rem 0;
+}
+.ul-blog{
+    font-size: 1.5rem;
+}
+.signature{
+  margin:auto;
+  font-size: 2rem;
+  display: block;
+  font-family: 'Patrick Hand', cursive;
+}
+
+/* About me */
+.center-content{
+  justify-content: center;
+}
+
+.about-me-caption{
+  width: 50%;
+  position:relative;
+  bottom:33px;
+}
+.caption-heading{
+  color: black;
+  font-family: 'Patrick Hand', cursive;
+  padding: auto;
+  margin: auto;
+}
+
+.sign-in-container{
+  width: 20%;
+}
+
+@font-face{
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+@media(max-width: 768px){
+  .container{
+    max-width: 700px;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+  }
+
+  .border-1, .carousel-border{
+    width:100%;
+    aspect-ratio: 16/6;
+  }
+
+  .toxic-trails-gameplay-photo{
+    width: 100%;
+    /* height: 900px; */
+    margin:auto;
+    position: relative;
+    bottom:0;
+  }
+}
+
+@media(max-width: 576px){
+  h1{
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+  }
+
+  h2{
+    font-size: 1.75rem;
+  }
+
+  h3{
+    font-size: 1.25rem;
+  }
+
+  p,a{
+    font-size: 0.75rem;
+  }
+
+  a.nav-link{
+    font-size:1.25rem;
+  }
+
+  .comic-border{
+    border: 0.15rem solid black;
+  }
+  .comic-border-invisible{
+    border: 0.15rem solid #00000000;
+  }
+
+  .navbar-brand{
+    margin:auto;
+  }
+  .navbar-toggler{
+    margin:auto;
+  }
+
+  .container{
+    max-width: 550px
+    margin: auto 0;
+    padding: 0;
+  }
+
+  .copyright-message{
+    font-size: .55rem;
+    color:rgba(255, 255, 255, 0.5);
+  }
+
+  .text-fade-beige::before{
+    top:95%;
+  }
+  .text-fade-dark-blue::before{
+    top:95%;
+  }
+  .text-fade-red::before{
+    top:95%;
+  }
+  .text-fade-orange::before{
+    top:95%;
+  }
+  .text-fade-off-white::before{
+    top:95%;
+  }
+
+  .nav-item.menu-item:hover{
+    background-color: rgba(255, 255, 255, 0.125);
+  }
+}
