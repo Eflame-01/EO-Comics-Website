@@ -48,6 +48,7 @@ a:hover{
 }
 
 .sign-up-layout{
+  top: 1rem;
   right: 5%;
   position: absolute;
   z-index: 2;
@@ -156,6 +157,27 @@ a:hover{
   margin: 1rem 1rem;
   height:100%;
 }
+
+/* .dropdown-menu{
+  position: absolute;
+  top: 100%;
+  left: auto;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  float: right;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: 1rem;
+  color: #003049;
+  text-align: center;
+  list-style: none;
+  background-color: #EAE2B7;
+  background-clip: padding-box;
+  border: 1px solid #003049aa;
+  border-radius: .25rem;
+} */
 
 .text-fade-red::before{
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #D62828 50%);
