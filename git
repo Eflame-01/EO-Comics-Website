@@ -1,0 +1,41 @@
+[33mcommit 6f7bd17589469156d9ee46ab0e3fd343db264ada[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Ese <eomene2@uic.edu>
+Date:   Sat Jul 30 10:30:41 2022 -0500
+
+    Delete Toxic Trails Game Play.png
+
+[33mcommit ad1ebc50ef82e47d476f8d5eaaf17c77d21fadf8[m
+Author: Ese <eomene2@uic.edu>
+Date:   Sat Jul 30 10:22:57 2022 -0500
+
+    Layout Update to member.js
+
+[33mcommit a6d205baa663e56e75bb0c69ee73b0bbc714a2d4[m
+Author: Ese <eomene2@uic.edu>
+Date:   Sat Jul 30 09:07:33 2022 -0500
+
+    Update Settings Dropdown
+
+[33mcommit 5844e25f89a58c7dab325686a64ef721e557b77d[m
+Author: Ese <eomene2@uic.edu>
+Date:   Fri Jul 29 22:22:39 2022 -0500
+
+    Update CSS for Dropdown Menu Feature
+
+[33mcommit c210bc6e69e9cc8255f469dd54d8c7cbd5d0173d[m
+Author: Ese <eomene2@uic.edu>
+Date:   Fri Jul 29 22:21:42 2022 -0500
+
+    Add Settings Dropdown Menu Feature After User Login/Sign Up
+
+[33mcommit 20227da4cd7c2cb416a39a0a5956b0e3ee7a8782[m
+Author: Ese <eomene2@uic.edu>
+Date:   Fri Jul 29 15:03:17 2022 -0500
+
+    Created .gitignore File
+
+[33mcommit 085cf67b3e20d0117163c9ae3940e15c7912a26b[m
+Author: Ese <eomene2@uic.edu>
+Date:   Fri Jul 29 14:47:44 2022 -0500
+
+    Create HTML, CSS, and Javascript Files for General Page
