@@ -7,6 +7,7 @@
 // localStorage.removeItem("memberData"); //place holder text to clear local storage of user data
 
 var data = localStorage.getItem("memberData"); //global variable that has user's login and some subscription data
+
 if(data != null || data != undefined){
   //parse data
   data = JSON.parse(data);
