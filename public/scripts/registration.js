@@ -1,8 +1,11 @@
 
 /*
   registration.js is the javascript file that is responsible for handling the
-  sign-up.html page for EO Comics.
+  sign-up.html and sign-in.html page for EO Comics.
 */
+
+//================== GLOBAL VARIABLES ===================//
+var memberData; //user's data that verifies that they are logged in.
 
 //================== ON READY FUNCTIONS =================//
 $('select[name$="birthDay"]').ready(function(){
@@ -44,6 +47,33 @@ $("#sign-up-button").click(function(){
     }
     else{
       //send to home Page
+      memberData = data;
+      localStorage.setItem("memberData", JSON.stringify(memberData));
+      window.location.replace("index.html");
+    }
+  });
+});
+
+$("#sign-in-button").click(function(){
+  $.post("sign-in", {
+    email : $('input[name$="email"]').val(),
+    password : $('input[name$="password"]').val()
+  }, function(data, status){
+    //data will be the list of errors gotten
+    //status is the status of the post request
+    if(data == null){
+      //TODO: figure something out
+      console.log("no data was given back...");
+    }
+    if(data[0] === "Error:"){
+      //display errors
+      clearErrors();
+      displayErrors(data);
+    }
+    else{
+      //send to home Page
+      memberData = data;
+      localStorage.setItem("memberData", JSON.stringify(memberData));
       window.location.replace("index.html");
     }
   });

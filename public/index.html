@@ -31,9 +31,29 @@
       <!-- Sign up widgit -->
       <section id="sign-up">
         <div class="sign-up-layout">
-          <img src="" alt="">
-          <a href="sign-in.html">Sign In</a>
-          <a href="sign-up.html">Sign Up</a>
+          <div id="sign-up-login-information" class="">
+            <a href="sign-in.html">Sign In</a>
+            <a href="sign-up.html">Sign Up</a>
+          </div>
+          <div id="member-information" class="row">
+            <div class="col-lg-5">
+              <p name="welcome-user-sign"></p>
+            </div>
+            <div class="col-lg-3">
+              <img src="" alt="">
+            </div>
+            <div class="col-lg-4">
+              <button id="settings-dropdown" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="material-icon text-center">settings</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="settings-dropdown">
+                <a class="dropdown-item" href="">Profile</a>
+                <a class="dropdown-item" href="">User Settings</a>
+                <a class="dropdown-item" href="">Saved Content</a>
+                <a class="dropdown-item" href="">Logoff</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -226,6 +246,6 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- <script src="scripts/index.js" charset="utf-8"></script> -->
+    <script src="scripts/member.js" charset="utf-8"></script>
   </body>
 </html>
