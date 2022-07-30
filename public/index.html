@@ -43,14 +43,24 @@
               <img src="" alt="">
             </div>
             <div class="col-lg-4">
-              <button id="settings-dropdown" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button id="settings-dropdown" type="button" class="btn btn-secondary" data-target="#settings-dropdown-items" data-toggle="collapse" aria-expanded="false" aria-controls="settings-dropdown-example">
                 <span class="material-icon text-center">settings</span>
               </button>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="settings-dropdown">
-                <a class="dropdown-item" href="">Profile</a>
-                <a class="dropdown-item" href="">User Settings</a>
-                <a class="dropdown-item" href="">Saved Content</a>
-                <a class="dropdown-item" href="">Logoff</a>
+              <div id="settings-dropdown-items" class="comic-border settings-dropdown collapse" aria-labelledby="settings-dropdown">
+                <div class="navbar-nav">
+                  <li class="settings-item menu-item">
+                    <a class="pull-left settings-link" href="">Profile</a>
+                  </li>
+                  <li class="settings-item menu-item">
+                    <a class="pull-left settings-link" href="">User Settings</a>
+                  </li>
+                  <li class="settings-item">
+                    <a class=" settings-link" href="">Saved Content</a>
+                  </li>
+                  <li class="settings-item">
+                    <a class=" settings-link" href="">Logoff</a>
+                  </li>
+                </div>
               </div>
             </div>
           </div>
