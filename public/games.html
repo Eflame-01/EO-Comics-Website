@@ -29,6 +29,45 @@
 
   <body>
     <div class="half-tones-background">
+      <!-- Sign up widgit -->
+      <section id="sign-up">
+        <div class="sign-up-layout">
+          <div id="sign-up-login-information" class="" hidden>
+            <a href="sign-in.html">Sign In</a>
+            <a href="sign-up.html">Sign Up</a>
+          </div>
+          <div id="member-information" class="row" hidden>
+            <div class="col-lg-5">
+              <p name="welcome-user-sign"></p>
+            </div>
+            <div class="col-lg-3">
+              <img src="" alt="">
+            </div>
+            <div class="col-lg-4">
+              <button id="settings-dropdown" type="button" class="btn btn-secondary" data-target="#settings-dropdown-items" data-toggle="collapse" aria-expanded="false" aria-controls="settings-dropdown-example">
+                <span class="material-icon text-center">settings</span>
+              </button>
+              <div id="settings-dropdown-items" class="comic-border settings-dropdown collapse" aria-labelledby="settings-dropdown">
+                <div class="navbar-nav">
+                  <li class="settings-item menu-item">
+                    <a class="pull-left settings-link" href="">Profile</a>
+                  </li>
+                  <li class="settings-item menu-item">
+                    <a class="pull-left settings-link" href="">User Settings</a>
+                  </li>
+                  <li class="settings-item">
+                    <a class=" settings-link" href="">Saved Content</a>
+                  </li>
+                  <li class="settings-item">
+                    <a name="logoff-link" class=" settings-link" href="">Logoff</a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Navbar -->
       <section id="navbar">
         <div class="container comic-border-invisible">
@@ -223,5 +262,8 @@
         </div>
       </section>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/member.js" charset="utf-8"></script>
   </body>
 </html>

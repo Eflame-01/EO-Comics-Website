@@ -55,6 +55,7 @@ $("#sign-up-button").click(function(){
 });
 
 $("#sign-in-button").click(function(){
+  console.log("sing in button was pressed.");
   $.post("sign-in", {
     email : $('input[name$="email"]').val(),
     password : $('input[name$="password"]').val()
